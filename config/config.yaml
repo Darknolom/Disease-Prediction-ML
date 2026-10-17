@@ -1,0 +1,24 @@
+# Конфигурация проекта предсказания заболеваний
+project:
+  name: "Disease Prediction ML"
+  description: "Предсказание 41 заболевания на основе 132 симптомов"
+
+data:
+  train_file: "Training.csv"
+  test_file: "Testing.csv"
+  target_column: "prognosis"
+  drop_columns: ["Unnamed: 133"]
+
+models:
+  - logistic_regression
+  - decision_tree
+  - knn
+  - random_forest
+  - gradient_boosting
+  - xgboost
+
+training:
+  default_seed: 42
+  test_size: 0.2
+  cv_folds: 5
+  n_jobs: -1
