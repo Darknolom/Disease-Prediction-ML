@@ -1,31 +1,25 @@
-# Python
+
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
-# Виртуальные окружения
 .venv/
 venv/
 env/
 
-# Данные
 data/*.csv
 
-# Модели и результаты
 models/*.joblib
 results/*.json
 
-# uv
 .uv/
 uv.lock
 
-# IDE
 .vscode/
 .idea/
 *.swp
 
-# OS
 .DS_Store
 Thumbs.db
